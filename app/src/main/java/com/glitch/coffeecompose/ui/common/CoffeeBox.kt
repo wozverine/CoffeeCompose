@@ -72,7 +72,7 @@ fun Coffeebox(image: Painter, cont: String) {
 
 			Button(
 				onClick = {
-						  
+
 				},
 				colors = ButtonDefaults.buttonColors(
 					containerColor = Maincolor,
