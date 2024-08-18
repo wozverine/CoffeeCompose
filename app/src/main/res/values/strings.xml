@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Coffee</string>
+
+    <string name="coffee_title">Let\'s get you some coffee!</string>
+    <string name="coffee_welcome">Welcome to our coffee app, where every cup is served with love.</string>
+    <string name="get_started">Get Started</string>
+
+
+    <string name="coffee_mocha">Coffee Mocha</string>
+    <string name="flat_white">Flat White</string>
+    <string name="deep_foam">Deep Foam</string>
+    <string name="espresso">Espresso</string>
+
+
+
+</resources>

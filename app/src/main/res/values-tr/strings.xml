@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kahvecim</string>
+    <string name="coffee_title">Hadi kahve içelim!</string>
+    <string name="coffee_welcome">Kahvecime hoş geldin. Her fincanı sevgiyle sunduk.</string>
+    <string name="get_started">Hadi başlayalım</string>
+    <string name="coffee_mocha">Mocha</string>
+    <string name="flat_white">Flat White</string>
+    <string name="deep_foam">Köpüklü</string>
+    <string name="espresso">Espresso</string>
+</resources>
