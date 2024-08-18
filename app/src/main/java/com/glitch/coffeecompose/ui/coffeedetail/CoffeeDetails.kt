@@ -104,8 +104,8 @@ fun CoffeeDetails() {
 							.width((screenWidth / 2).dp)
 							.weight(1f), // Take up equal space in the Column
 					) {
-						Coffeebox(painterResource(id = R.drawable.coffee1), counter.toString())
-						Coffeebox(painterResource(id = R.drawable.coffee2), counter.toString())
+						Coffeebox(painterResource(id = R.drawable.coffee1), "0")
+						Coffeebox(painterResource(id = R.drawable.coffee2), "0")
 					}
 
 					Column(
@@ -113,8 +113,8 @@ fun CoffeeDetails() {
 							.width((screenWidth / 2).dp)
 							.weight(1f), // Take up equal space in the Column
 					) {
-						Coffeebox(painterResource(id = R.drawable.coffee3), counter.toString())
-						Coffeebox(painterResource(id = R.drawable.coffee4), counter.toString())
+						Coffeebox(painterResource(id = R.drawable.coffee3), "0")
+						Coffeebox(painterResource(id = R.drawable.coffee4), "0")
 					}
 
 
