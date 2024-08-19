@@ -8,5 +8,9 @@ val coffeeItems = listOf(
 	CoffeeItem(R.drawable.coffee1, "0"),
 	CoffeeItem(R.drawable.coffee2, "0"),
 	CoffeeItem(R.drawable.coffee3, "0"),
+	CoffeeItem(R.drawable.coffee4, "0"),
+	CoffeeItem(R.drawable.coffee1, "0"),
+	CoffeeItem(R.drawable.coffee2, "0"),
+	CoffeeItem(R.drawable.coffee3, "0"),
 	CoffeeItem(R.drawable.coffee4, "0")
 )
