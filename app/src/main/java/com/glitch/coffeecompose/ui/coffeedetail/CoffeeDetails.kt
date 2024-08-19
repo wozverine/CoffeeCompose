@@ -48,7 +48,7 @@ fun CoffeeDetails() {
 	val screenWidth = configuration.screenWidthDp
 	val screenHeight = configuration.screenHeightDp
 
-	Scaffold(
+	/*Scaffold(
 		topBar = {
 			TopAppBar(
 				title = { Text(text = "Welcome") },
@@ -76,7 +76,7 @@ fun CoffeeDetails() {
 			val (banner, grid) = createRefs()
 
 /////
-			/*Box(
+			*//*Box(
 				modifier = Modifier
 					.fillMaxSize()
 			) {
@@ -85,7 +85,7 @@ fun CoffeeDetails() {
 						.align(Alignment.TopCenter)
 						.padding(horizontal = 10.dp)
 						.padding(top = paddingValues.calculateTopPadding()),
-				) {*/
+				) {*//*
 
 			//////
 			Column(
@@ -125,19 +125,18 @@ fun CoffeeDetails() {
 				)
 			}
 
-			/*LazyVerticalGrid(
+			*//*LazyVerticalGrid(
 				columns = GridCells.Fixed(2), // Define the number of columns
 				modifier = Modifier
 					.fillMaxWidth()
 					.align(Alignment.BottomCenter)
-			){*/
+			){*//*
 ///
 			LazyVerticalGrid(
 				columns = GridCells.Fixed(2),
 				modifier = Modifier
 					.constrainAs(grid) {
 						top.linkTo(banner.bottom)
-						//bottom.linkTo(parent.bottom)
 						start.linkTo(parent.start)
 						end.linkTo(parent.end)
 					}
@@ -152,7 +151,94 @@ fun CoffeeDetails() {
 		}
 
 
+	}*/
+
+	Scaffold(
+		topBar = {
+			TopAppBar(
+				title = { Text(text = "Welcome") },
+				colors = TopAppBarDefaults.topAppBarColors(
+					containerColor = Topcolor,
+					titleContentColor = Textcolor1
+				)
+			)
+		}
+	) { paddingValues ->
+		Image(
+			painter = painterResource(id = R.drawable.secondtop),
+			modifier = Modifier
+				.height((screenHeight / 4).dp)
+				.fillMaxWidth(),
+			contentScale = ContentScale.Crop,
+			contentDescription = ""
+		)
+		Column(
+			modifier = Modifier
+				.fillMaxSize()
+				.padding(paddingValues) // Ensure the content respects padding values
+		) {
+
+
+
+			ConstraintLayout(
+				modifier = Modifier
+					.fillMaxSize()
+			) {
+				val (banner, grid) = createRefs()
+
+				Column(
+					modifier = Modifier
+						.constrainAs(banner) {
+							top.linkTo(parent.top)
+							start.linkTo(parent.start)
+							end.linkTo(parent.end)
+						}
+						.padding(horizontal = 10.dp)
+				) {
+
+					Text(
+						text = stringResource(id = R.string.coffee_title),
+						fontSize = (screenWidth / 20).sp,
+						color = Color.White,
+						modifier = Modifier.padding(10.dp)
+					)
+
+					Image(
+						painter = painterResource(id = R.drawable.searchbar),
+						modifier = Modifier
+							.fillMaxWidth(),
+						contentScale = ContentScale.Crop,
+						contentDescription = null
+					)
+
+					Image(
+						painter = painterResource(id = R.drawable.banner),
+						modifier = Modifier
+							.padding(vertical = 10.dp)
+							.fillMaxWidth(),
+						contentScale = ContentScale.Crop,
+						contentDescription = null
+					)
+				}
+
+				LazyVerticalGrid(
+					columns = GridCells.Fixed(2),
+					modifier = Modifier
+						.constrainAs(grid) {
+							top.linkTo(banner.bottom)
+							start.linkTo(parent.start)
+							end.linkTo(parent.end)
+						}
+						.fillMaxWidth()
+				) {
+					items(coffeeItems) { item ->
+						Coffeebox(painterResource(item.image), item.count)
+					}
+				}
+			}
+		}
 	}
+
 }
 
 @Preview(showBackground = true)
