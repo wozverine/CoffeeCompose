@@ -2,6 +2,7 @@
     <string name="app_name">My Coffee</string>
 
     <string name="coffee_title">Let\'s get you some coffee!</string>
+    <string name="pastry_title">Let\'s get you some pastry!</string>
     <string name="coffee_welcome">Welcome to our coffee app, where every cup is served with love.</string>
     <string name="get_started">Get Started</string>
 
@@ -10,6 +11,15 @@
     <string name="flat_white">Flat White</string>
     <string name="deep_foam">Deep Foam</string>
     <string name="espresso">Espresso</string>
+
+    <string name="coffee">Coffee</string>
+    <string name="pastry">Pastry</string>
+    <string name="cart">Cart</string>
+    <string name="pay">Pay</string>
+
+    <string name="paymentsuccessful">Payment Successful</string>
+    <string name="orders">Orders</string>
+
 
 
 

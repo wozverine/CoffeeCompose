@@ -8,4 +8,11 @@
     <string name="flat_white">Flat White</string>
     <string name="deep_foam">Köpüklü</string>
     <string name="espresso">Espresso</string>
+    <string name="coffee">Kahve</string>
+    <string name="pastry">Pastane</string>
+    <string name="cart">Sepet</string>
+    <string name="pay">Ödeme</string>
+    <string name="paymentsuccessful">Ödeme başarılı</string>
+    <string name="orders">Ürünler</string>
+    <string name="pastry_title">Pastalarımız tazedir!</string>
 </resources>

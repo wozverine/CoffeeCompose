@@ -11,13 +11,17 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 //Colors
-val Maincolor = Color(0xFF000000)//Hex
-val Topcolor = Color(0xFF222222)//Hex
-val Textcolor1 = Color(0xFFC9C9C9)//Hex
-val Textcolor2 = Color(0xFFBEBEBE)//Hex
+val Maincolor = Color(0xFF000000)
+val Topcolor = Color(0xFF222222)
+val Textcolor1 = Color(0xFFC9C9C9)
+val Textcolor2 = Color(0xFFBEBEBE)
+
 
 //DarkColors
-val MaincolorDark = Color(0xFF000000)//Hex
-val TopcolorDark = Color(0xFF222222)//Hex
-val Textcolor1Dark = Color(0xFFC9C9C9)//Hex
-val Textcolor2Dark = Color(0xFFBEBEBE)//Hex
+val MaincolorDark = Color(0xFF000000)
+val TopcolorDark = Color(0xFF222222)
+val Textcolor1Dark = Color(0xFFCACACA)
+val Textcolor2Dark = Color(0xFFBEBEBE)
+
+val ButtonOrange = Color(0xFFC57C4E)
+val ButtonGreen = Color(0xFF43A047)
