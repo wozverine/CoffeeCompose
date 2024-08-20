@@ -37,7 +37,7 @@ import com.glitch.coffeecompose.ui.theme.CoffeeComposeTheme
 
 @SuppressLint("AutoboxingStateCreation")
 @Composable
-fun Coffeebox(image: Painter, price: String) {
+fun Coffeebox(image: Painter, price: String, coffeeName: Int, coffeeType: Int) {
 	val counter = remember {
 		mutableStateOf(0)
 	}
@@ -61,7 +61,7 @@ fun Coffeebox(image: Painter, price: String) {
 		)
 
 		Text(
-			text = stringResource(id = R.string.coffee_mocha),
+			text = stringResource(id = coffeeName),
 			fontSize = 20.sp,
 			fontWeight = FontWeight.Bold,
 			modifier = Modifier
@@ -69,7 +69,7 @@ fun Coffeebox(image: Painter, price: String) {
 		)
 
 		Text(
-			text = stringResource(id = R.string.deep_foam),
+			text = stringResource(id = coffeeType),
 			fontSize = 16.sp,
 			modifier = Modifier.padding(vertical = 10.dp)
 		)
@@ -122,7 +122,9 @@ fun Coffeebox(image: Painter, price: String) {
 						.clip(RoundedCornerShape(4.dp))
 						.background(ButtonOrange)
 						.clickable(onClick = {
-							counter.value += 1
+							if (counter.value > 0) {
+								counter.value -= 1
+							}
 						}),
 					contentAlignment = Alignment.Center
 				) {
@@ -146,6 +148,11 @@ fun Coffeebox(image: Painter, price: String) {
 @Composable
 fun CoffeeDetailsPreview() {
 	CoffeeComposeTheme {
-		Coffeebox(painterResource(id = R.drawable.coffee1), "$5")
+		Coffeebox(
+			painterResource(id = R.drawable.coffee1),
+			"$5",
+			R.string.coffee_mocha,
+			R.string.deep_foam
+		)
 	}
 }

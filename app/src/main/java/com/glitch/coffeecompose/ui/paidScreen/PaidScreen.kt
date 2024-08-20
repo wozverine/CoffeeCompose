@@ -29,6 +29,7 @@ import com.glitch.coffeecompose.ui.theme.ButtonOrange
 import com.glitch.coffeecompose.ui.theme.CoffeeComposeTheme
 import com.glitch.coffeecompose.ui.theme.Maincolor
 import com.glitch.coffeecompose.ui.theme.Textcolor1
+import com.glitch.coffeecompose.ui.theme.Textcolor3
 import com.glitch.coffeecompose.ui.theme.vic
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -51,14 +52,15 @@ fun PaidScreen(navController: NavController) {
 			modifier = Modifier
 				.fillMaxSize()
 				.padding(paddingValues),
-			verticalArrangement = Arrangement.SpaceEvenly
+			verticalArrangement = Arrangement.SpaceEvenly,
+			horizontalAlignment = Alignment.CenterHorizontally
 		) {
 			Text(
 				text = stringResource(id = R.string.paymentsuccessful),
 				fontWeight = FontWeight.Bold,
 				fontSize = (screenWidth / 10).sp,
 				textAlign = TextAlign.Center,
-				color = Textcolor1,
+				color = Textcolor3,
 			)
 
 			Button(

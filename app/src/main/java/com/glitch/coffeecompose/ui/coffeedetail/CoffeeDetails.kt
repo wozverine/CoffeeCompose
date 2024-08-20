@@ -1,6 +1,5 @@
 package com.glitch.coffeecompose.ui.coffeedetail
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -40,6 +39,7 @@ import com.glitch.coffeecompose.ui.theme.ButtonOrange
 import com.glitch.coffeecompose.ui.theme.CoffeeComposeTheme
 import com.glitch.coffeecompose.ui.theme.Textcolor1
 import com.glitch.coffeecompose.ui.theme.Topcolor
+import com.glitch.coffeecompose.ui.theme.vic
 import my.nanihadesuka.compose.LazyVerticalGridScrollbar
 import my.nanihadesuka.compose.ScrollbarSettings
 
@@ -56,7 +56,8 @@ fun CoffeeDetails(navController: NavController) {
 
 	Scaffold(topBar = {
 		TopAppBar(
-			title = { Text(text = "Welcome") }, colors = TopAppBarDefaults.topAppBarColors(
+			title = { Text(text = stringResource(id = R.string.welcome), fontFamily = vic) },
+			colors = TopAppBarDefaults.topAppBarColors(
 				containerColor = Topcolor, titleContentColor = Textcolor1
 			)
 		)
@@ -139,7 +140,12 @@ fun CoffeeDetails(navController: NavController) {
 							}
 							.fillMaxSize()) {
 						items(coffeeItems) { item ->
-							Coffeebox(painterResource(item.image), item.price)
+							Coffeebox(
+								painterResource(item.image),
+								item.price,
+								item.coffeeName,
+								item.coffeeType
+							)
 						}
 					}
 				}
@@ -172,7 +178,7 @@ fun CoffeeDetails(navController: NavController) {
 
 @Preview(
 	showBackground = true,
-	uiMode = UI_MODE_NIGHT_YES
+	//uiMode = UI_MODE_NIGHT_YES
 )
 @Composable
 fun CoffeeDetailsPreview() {

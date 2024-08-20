@@ -5,12 +5,17 @@
     <string name="pastry_title">Let\'s get you some pastry!</string>
     <string name="coffee_welcome">Welcome to our coffee app, where every cup is served with love.</string>
     <string name="get_started">Get Started</string>
+    <string name="welcome">Welcome</string>
 
 
     <string name="coffee_mocha">Coffee Mocha</string>
     <string name="flat_white">Flat White</string>
+    <string name="mocha_fushi">Mocha Fushi</string>
+    <string name="caffe_panna">Caffe Panna</string>
+
     <string name="deep_foam">Deep Foam</string>
     <string name="espresso">Espresso</string>
+    <string name="ice_hot">Ice/Hot</string>
 
     <string name="coffee">Coffee</string>
     <string name="pastry">Pastry</string>

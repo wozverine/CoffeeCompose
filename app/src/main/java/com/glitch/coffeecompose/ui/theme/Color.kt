@@ -15,6 +15,7 @@ val Maincolor = Color(0xFF000000)
 val Topcolor = Color(0xFF222222)
 val Textcolor1 = Color(0xFFC9C9C9)
 val Textcolor2 = Color(0xFFBEBEBE)
+val Textcolor3 = Color(0xFF525252)
 
 
 //DarkColors
@@ -22,6 +23,7 @@ val MaincolorDark = Color(0xFF000000)
 val TopcolorDark = Color(0xFF222222)
 val Textcolor1Dark = Color(0xFFCACACA)
 val Textcolor2Dark = Color(0xFFBEBEBE)
+val Textcolor3Dark = Color(0xFFBEBEBE)
 
 val ButtonOrange = Color(0xFFC57C4E)
 val ButtonGreen = Color(0xFF43A047)

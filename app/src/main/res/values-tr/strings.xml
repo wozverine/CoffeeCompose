@@ -15,4 +15,8 @@
     <string name="paymentsuccessful">Ödeme başarılı</string>
     <string name="orders">Ürünler</string>
     <string name="pastry_title">Pastalarımız tazedir!</string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="mocha_fushi">Mocha Fushi</string>
+    <string name="caffe_panna">Caffe Panna</string>
+    <string name="ice_hot">Sıcak/Soğuk</string>
 </resources>
