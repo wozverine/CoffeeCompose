@@ -3,6 +3,7 @@ package com.glitch.coffeecompose.ui.paidScreen
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
@@ -13,6 +14,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
@@ -24,6 +26,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.LottieConstants
+import com.airbnb.lottie.compose.rememberLottieComposition
 import com.glitch.coffeecompose.R
 import com.glitch.coffeecompose.ui.theme.ButtonOrange
 import com.glitch.coffeecompose.ui.theme.CoffeeComposeTheme
@@ -61,6 +67,16 @@ fun PaidScreen(navController: NavController) {
 				fontSize = (screenWidth / 10).sp,
 				textAlign = TextAlign.Center,
 				color = Textcolor3,
+			)
+
+			val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.lottie_payment))
+
+			LottieAnimation(
+				modifier = Modifier
+					.width((screenWidth / 4 * 3).dp)
+					.height((screenHeight / 2).dp),
+				composition = composition,
+				iterations = LottieConstants.IterateForever,
 			)
 
 			Button(

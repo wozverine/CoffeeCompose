@@ -71,4 +71,5 @@ dependencies {
 	implementation("androidx.navigation:navigation-compose:2.7.6")
 	implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 	implementation("com.github.nanihadesuka:LazyColumnScrollbar:2.2.0")
+	implementation("com.airbnb.android:lottie-compose:6.5.0")
 }
