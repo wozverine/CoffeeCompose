@@ -17,11 +17,19 @@
     <string name="espresso">Espresso</string>
     <string name="ice_hot">Ice/Hot</string>
 
+    <string name="cake">Cake</string>
+    <string name="cookie">Cookies</string>
+
+    <string name="birthday_cake">Birthday Cake</string>
+    <string name="cupcake">Cupcake</string>
+    <string name="pie">Pie</string>
+    <string name="macarons">Macarons</string>
+
     <string name="coffee">Coffee</string>
     <string name="pastry">Pastry</string>
+
     <string name="cart">Cart</string>
     <string name="pay">Pay</string>
-
     <string name="paymentsuccessful">Payment Successful</string>
     <string name="orders">Orders</string>
 

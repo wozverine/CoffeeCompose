@@ -68,5 +68,5 @@ val coffeeItems = listOf(
 		R.string.ice_hot,
 		"0",
 		"$4.85"
-	),
+	)
 )

@@ -55,6 +55,7 @@ fun Coffeebox(image: Painter, price: String, coffeeName: Int, coffeeType: Int) {
 		Image(
 			painter = image,
 			modifier = Modifier
+				.clip(RoundedCornerShape(7.dp))
 				.fillMaxWidth(),
 			contentScale = ContentScale.Crop,
 			contentDescription = null
@@ -149,7 +150,7 @@ fun Coffeebox(image: Painter, price: String, coffeeName: Int, coffeeType: Int) {
 fun CoffeeDetailsPreview() {
 	CoffeeComposeTheme {
 		Coffeebox(
-			painterResource(id = R.drawable.coffee1),
+			painterResource(id = R.drawable.pastry_1),
 			"$5",
 			R.string.coffee_mocha,
 			R.string.deep_foam

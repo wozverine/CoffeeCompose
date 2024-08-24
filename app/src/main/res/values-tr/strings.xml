@@ -8,6 +8,10 @@
     <string name="flat_white">Flat White</string>
     <string name="deep_foam">Köpüklü</string>
     <string name="espresso">Espresso</string>
+    <string name="cake">Kek</string>
+    <string name="birthday_cake">Doğum günü pastası</string>
+    <string name="cupcake">Kapkek</string>
+    <string name="pie">Tart</string>
     <string name="coffee">Kahve</string>
     <string name="pastry">Pastane</string>
     <string name="cart">Sepet</string>
@@ -19,4 +23,6 @@
     <string name="mocha_fushi">Mocha Fushi</string>
     <string name="caffe_panna">Caffe Panna</string>
     <string name="ice_hot">Sıcak/Soğuk</string>
+    <string name="cookie">Kurabiye</string>
+    <string name="macarons">Makaron</string>
 </resources>
